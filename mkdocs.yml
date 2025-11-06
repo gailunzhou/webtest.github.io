@@ -1,3 +1,10 @@
-site_name: My Docs
+site_name: Lab512 Docs
 theme:
   name: material
+
+  icon:
+    logo: material/cat
+  
+  language: zh
+
+copyright: CopyRight @ 2025-11-6 TJCU CCChiJi All Rights Reserved

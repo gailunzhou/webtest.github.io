@@ -1,4 +1,4 @@
-# Welcome to MkDocs
+# Welcome to Lab512 Docs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
