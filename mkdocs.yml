@@ -1,10 +1,30 @@
 site_name: Lab512 Docs
 theme:
-  name: material
+  name: material #指定的主题
 
   icon:
     logo: material/cat
   
-  language: zh
+  language: zh #界面语言
+
+  features: #启用material特色功能
+    - navigation.tabs #顶部导航标签页
+    - navigation.sections #侧边栏分组折叠
+    - search.suggest #搜索建议
+    - search.highlight #搜索结果高亮
+    - content.tabs.link #内容标签页支持锚点
+  palette: #配色方案（支持自动切换暗黑/亮色）
+    - media: "(prefers-color-scheme: light)" #亮色模式
+      scheme: default
+      primary: blue #主色调
+      accent: balck
+    - media: "(prefers-color-scheme: dark)" #暗黑模式
+      scheme: slate
+      primary: blue
+      accent: blue
+  nav: #网站导航结构（侧边栏和顶部标签页的内容）
+    - 首页: index.md # 导航项名称 -> 对应docs目录下的Markdown文件
+    #- Markdown 语法: markdown-syntax.md
+    #- 部署指南: deploy.md
 
 copyright: CopyRight @ 2025-11-6 TJCU CCChiJi All Rights Reserved
