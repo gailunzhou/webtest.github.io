@@ -8,7 +8,11 @@ theme:
   language: zh #界面语言
 
   features: #启用material特色功能
+    - navigation.sections
+    - navigation.instant
+    - navigation.top #返回顶部按钮
     - navigation.tabs #顶部导航标签页
+    - navigation.expand #让分组默认展开
     - navigation.sections #侧边栏分组折叠
     - search.suggest #搜索建议
     - search.highlight #搜索结果高亮
@@ -22,15 +26,18 @@ theme:
       scheme: slate
       primary: blue #主题色
       accent: cyan #强调色 青色
-  nav: #网站导航结构（侧边栏和顶部标签页的内容）
-    - 首页: index.md # 导航项名称 -> 对应docs目录下的Markdown文件
-    - 基础指南:
-      - Markdown 语法: markdown-syntax.md
-      #- 部署指南: deploy.md
-    #- 软件:
-    #- 硬件:
+
+nav: #网站导航结构（侧边栏和顶部标签页的内容）
+  - 首页: index.md # 导航项名称 -> 对应docs目录下的Markdown文件
+  - 基础指南:
+    - 创建和更新网站: createweb.md
+    - Markdown 语法: markdown-syntax.md
+  - 外部资源:
+    - MkDocs 官网: https://mkdocs.org
+    - Material 文档: https://squidfunk.github.io/mkdocs-material/
 
 markdown_extensions: #扩展项
+  - admonition  # 新增：启用提示框扩展
   - pymdownx.tabbed:  # 启用内容标签页扩展
       alternate_style: true  # 可选：启用交替样式（视觉更美观）
   - pymdownx.tasklist:

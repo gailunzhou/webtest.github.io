@@ -1,6 +1,10 @@
 # 核心：Markdown 语法（Material 主题增强版）
 
+# Written by : CCChiJi
+
 Material 主题对标准 Markdown 进行了扩展，支持表格、代码块、公式、注释等丰富功能，以下是常用语法及效果示例，推荐使用VScode编译，后文所有内容默认以VScode环境
+
+**文中提到的根目录都指文件夹下含有docs文件夹和mkdocs.yml文件的那个文件夹**
 
 ## 基础文本格式 
 
@@ -225,19 +229,28 @@ print(f"结果：{result}")#输出30
 
 **下载扩展包步骤和代码:**
 
-1. 开启VScode中的终端
+- 开启VScode中的终端
+
 ![VScodeTerminal](images/VScodeTerminal.png)
-2. 复制MkDocs文件路径，即文件夹下含有docs文件夹和mkdocs.yml文件的那个文件
+
+- 复制MkDocs文件路径，即文件夹下含有docs文件夹和mkdocs.yml文件的那个文件夹
+
 ![DocsPath](images/DocsPath.png)
-3. 使用cd跳转到对应文件夹
+
+- 使用cd跳转到对应文件夹
+
 ![cd2path](images/cd2path.png)
-4. 下载扩展包
+
+- 下载扩展包
+
+![installex](images/installex.png)
+
 ```bash
 pip install pymdown-extensions
 ```
 
-![installex](images/installex.png)
-5. 修改mkdocs.yml中的配置
+- 修改mkdocs.yml中的配置 ***（修改完记得保存）***
+
 ![ymlchange](images/ymlchange.png)
 
 **语法:**
@@ -278,21 +291,82 @@ int main()
 
 用`!!! 类型`开头，`!!!`后需要加一个空格，其中*类型*支持`note`(信息)、`warning`(警告)、`success`(成功)等
 
+该部分依赖于提示框（Admonition）的核心扩展配置，无需下载，但需要手动进行配置
+
+**配置方法:**
+
+修改mkdocs.yml中的配置即可 ***（修改完记得保存）***
+
+![admonition](images/admonition.png)
+
 **语法:**
 
 ```
 !!! note "信息提示"
     本地预览命令：`mkdocs serve`，访问 http://127.0.0.1:8000 查看。
+
 !!! warning "警告提示"
     修改 `mkdocs.yml` 后，若预览无变化，需重启 `mkdocs serve`。
+
 !!! success "成功提示"
     文档更新后，执行 `mkdocs gh-deploy` 即可部署到 GitHub。
 ```
 
 **效果:**
+
 !!! note "信息提示"
     本地预览命令：`mkdocs serve`，访问 http://127.0.0.1:8000 查看。
+
 !!! warning "警告提示"
     修改 `mkdocs.yml` 后，若预览无变化，需重启 `mkdocs serve`。
+
 !!! success "成功提示"
     文档更新后，执行 `mkdocs gh-deploy` 即可部署到 GitHub。
+
+## 项目优化：添加图片、附件与导航
+### 添加本地图片
+
+**方法:**
+
+1. 在`docs`目录下创建`images`文件夹，放入图片(如CCChiJi.png)
+2. 在Markdown中引用:
+```
+![CCChiJi](images/CCChiJi.jpg)
+```
+
+**效果:**
+
+![CCChiJi](images/CCChiJi.jpg)
+
+### 添加附件(如PDF)
+
+**方法:**
+
+1. 在`docs`目录下创建`files`文件夹，放入附件(如guide.pdf)
+2. 用链接引用，支持下载
+```
+[下载PDF指南](files/guide.pdf) #点击链接可下载或预览
+```
+
+**效果:**
+
+[下载PDF指南](files/guide.pdf)
+
+## 优化导航结构
+
+修改`mkdocs.yml`的`nav`配置，支持多级导航和外部链接
+
+**示例:**
+
+```
+nav:
+  - 首页: index.md
+  - Markdown 教程:
+    - 基础语法: markdown-syntax.md
+    - 扩展语法: markdown-advanced.md  # 可自行创建
+  - 部署指南: deploy.md
+  - 外部资源:
+    - MkDocs 官网: https://mkdocs.org
+    - Material 文档: https://squidfunk.github.io/mkdocs-material/
+```
+
