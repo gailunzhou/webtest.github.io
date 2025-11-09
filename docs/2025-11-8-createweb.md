@@ -192,11 +192,11 @@ copyright: CopyRight @ 2025-11-6 TJCU CCChiJi All Rights Reserved
 
 - 输入`cd`后加一个空格，然后输入文件夹名的第一个字母再按Tab键会自动补齐，然后回车就可以跳转到对应文件夹内
 
-![useserve02](images/2025-11-8-createweb/opencmd02.png)
+![useserve02](images/2025-11-8-createweb/useserve02.png)
 
 - 执行`mkdocs serve`命令即可启动实时本地预览服务器
 
-![useserve03](images/2025-11-8-createweb/opencmd03.png)
+![useserve03](images/2025-11-8-createweb/useserve03.png)
 
 此时你的终端应该会一直保持上图样子，点击一下终端页面键盘按下`Ctrl`+`C`即可关闭运行，使用终端
 
