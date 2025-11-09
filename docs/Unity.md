@@ -1,1 +1,9 @@
 
+<div class="article-meta" style="background: #f0f8ff; padding: 15px; border-left: 4px solid #2196f3; margin-bottom: 20px; border-radius: 4px;">
+<p style="margin: 0; color: #666; font-size: 0.9em;">
+<strong>📅 发布日期:</strong> 2025-11-09 &nbsp;|&nbsp;
+<strong>👤 作者:</strong> DJZ &nbsp;|&nbsp;
+<strong>📁 分类:</strong> Unity引擎 &nbsp;|&nbsp;
+<strong>🏷️ 标签:</strong> Unity,VR,虚拟现实
+</p>
+</div>
