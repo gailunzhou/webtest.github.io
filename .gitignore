@@ -1,4 +1,5 @@
 .vscode
 __pycache__
-.labauthor
+.lab
 *.egg-info
+*.labsecret
