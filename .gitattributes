@@ -1,2 +1,2 @@
 .labsecret filter=git-crypt diff=git-crypt
-docs/secret-files/** filter=git-crypt diff=git-crypt
+docs/secret-files/* filter=git-crypt diff=git-crypt
