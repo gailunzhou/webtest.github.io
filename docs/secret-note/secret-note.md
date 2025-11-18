@@ -1,6 +1,10 @@
----meta
-
+---lab
+author: teriyakisushi
+category:
+tags: secret-note git-crypt
 ---
+
+# 敏感信息处理说明
 
 先按照基础指南第一篇文章[环境配置](../basic/2025-11-8-firstDeploy.md) 完成 **git + git-crypt** 的环境配置。
 
@@ -25,7 +29,7 @@ git-crypt init
 git-crypt unlock .labsecret
 ``` 
 
-以上操作完成后，你应该就能看到 `docs/secret/` 目录下的明文内容了，打开 `docs/secret-files/secret-test.txt` 文件确认一下🤭
+以上操作完成后，你应该就能看到 `docs/secret-files/` 目录下的明文内容了，打开 `docs/secret-files/secret-test.txt` 文件确认一下🤭
 
 ## 添加敏感信息文件
 

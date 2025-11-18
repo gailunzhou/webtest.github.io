@@ -1,11 +1,9 @@
-<div class="article-meta" style="background: #f0f8ff; padding: 15px; border-left: 4px solid #2196f3; margin-bottom: 20px; border-radius: 4px;">
-<p style="margin: 0; color: #666; font-size: 0.9em;">
-<strong>📅 发布日期:</strong> 2025-11-08 &nbsp;|&nbsp;
-<strong>👤 作者:</strong> CCChiJi &nbsp;|&nbsp;
-<strong>📁 分类:</strong> 技术笔记 &nbsp;|&nbsp;
-<strong>🏷️ 标签:</strong> 网站创建
-</p>
-</div>
+---lab
+date: 2025-11-8
+author: CCChiJi
+category: 技术笔记
+tags: 网站创建
+---
 
 # 使用MkDocs搭建自己的网站
 

@@ -41,6 +41,7 @@ git config --global user.email "你的Github注册邮箱"
 安装并打开 VSCode，按下 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> 打开扩展市场，搜索并安装以下扩展：
 
 - **Markdown All in One**
+- **Markdown Preview Enhanced** (可选，用于增强 Markdown 预览功能)
 - **Python**
 
 安装完成后，重启 VSCode 以确保扩展生效。

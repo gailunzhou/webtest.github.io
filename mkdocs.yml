@@ -88,7 +88,8 @@ nav:
     - YOLO: 2025-11-9-YOLO11 模型训练与使用.md
     - LLM&API: 2025-11-12-Introduction to LLM APIs.md
   
-  - 网站测试:
+  - 插件测试:
+    - 主页: dev-test/index.md
     - Lab512插件测试: dev-test/lab512_test.md
 
 
